@@ -1,11 +1,13 @@
-import Design from "./design"
-
+import React, { useEffect } from 'react';
+import Design from './design';
+import { useDesignContext } from './DesignContext';
 function ViewPage() {
-    
-    document.title = 'Presentation'
 
+    document.title = 'Presentation';
     return (
-    <></>
+        <>
+            <Design />
+        </>
     )
 }
 

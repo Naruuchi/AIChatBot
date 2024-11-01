@@ -3,18 +3,20 @@ import AIChat from "./chatbot.js"
 import Layout from "./navLayout.js"
 import HomePage from './home.js';
 import ViewPage from './view.js';
-
+import { DesignProvider } from './DesignContext.js';
 function Navigation() {
     return (
         <nav>
             <BrowserRouter>
-                <Routes>
-                    <Route element={<Layout/>}>
-                        <Route path="/AIAssistant" element={<AIChat/>}/>
-                        <Route path="/view" element={<ViewPage/>}/>
-                        <Route index path="/" element={<HomePage/>}/>
-                    </Route>
-                </Routes>
+                <DesignProvider>
+                    <Routes>
+                        <Route element={<Layout />}>
+                            <Route path="/AIAssistant" element={<AIChat />} />
+                            <Route path="/view" element={<ViewPage />} />
+                            <Route index path="/" element={<HomePage />} />
+                        </Route>
+                    </Routes>
+                </DesignProvider>
             </BrowserRouter>
         </nav>
     )
