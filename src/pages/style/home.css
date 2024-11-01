@@ -1,0 +1,19 @@
+.home-pages {
+    background-color: ghostwhite;
+    display: flex;
+    width: 201.4vh;
+    height: 100vh;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 10px;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.title > h1
+{
+    font-size: 60px;
+}
