@@ -8,15 +8,15 @@ import { useDesignContext } from './DesignContext';
 function Layout() {
     const inputFile = useRef('')
 
+    
     const HandleButtonOnClick = () => {
         inputFile.current.click()
     }
 
-    const { isOpen, toggleDesign } = useDesignContext();
+    const { isOpen, toggleDesign, HandleSetPDFFile } = useDesignContext();
 
     const HandleDesignDropdown = () => {
         if (document.title === 'Presentation') {
-            console.log('Yes')
             toggleDesign();
         }
     }
@@ -29,7 +29,7 @@ function Layout() {
                     <li>
                         <b>
                             <button className="nav_button" onClick={HandleButtonOnClick}>File</button>
-                        </b><input ref={inputFile} type="file" id="presentfile" style={{ display: 'none' }} />
+                        </b><input ref={inputFile} onChange={HandleSetPDFFile} type="file" id="presentfile" style={{ display: 'none' }} />
                     </li>
                     <li><b><Link className="nav_button" to="/view">View</Link></b></li>
                     <li>

@@ -1,9 +1,11 @@
 .home-pages {
-    background-color: ghostwhite;
+    background-image: url('./static/bg.png');
     display: flex;
     width: 201.4vh;
     height: 100vh;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
