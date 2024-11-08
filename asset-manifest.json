@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/AIChatBot/static/css/main.daa26240.css",
-    "main.js": "/AIChatBot/static/js/main.794264f5.js",
+    "main.js": "/AIChatBot/static/js/main.aea98d99.js",
     "static/js/453.0eeb8940.chunk.js": "/AIChatBot/static/js/453.0eeb8940.chunk.js",
     "static/media/f.pdf": "/AIChatBot/static/media/f.3f662283db3dd05d5c4c.pdf",
     "index.html": "/AIChatBot/index.html",
     "main.daa26240.css.map": "/AIChatBot/static/css/main.daa26240.css.map",
-    "main.794264f5.js.map": "/AIChatBot/static/js/main.794264f5.js.map",
+    "main.aea98d99.js.map": "/AIChatBot/static/js/main.aea98d99.js.map",
     "453.0eeb8940.chunk.js.map": "/AIChatBot/static/js/453.0eeb8940.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.daa26240.css",
-    "static/js/main.794264f5.js"
+    "static/js/main.aea98d99.js"
   ]
 }
